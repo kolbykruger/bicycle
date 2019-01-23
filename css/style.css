@@ -230,7 +230,7 @@ button.button {cursor: pointer; font-family: inherit; font-size: inherit;}
 .book-bar .inner .item::after {font-family: "Font Awesome 5 Pro"; position: absolute; right: 10px; top: 0; bottom: 0; display: flex; align-items: center; justify-content: center; pointer-events: none; opacity: 0.65;}
 .book-bar input,
 .book-bar select,
-.book-bar button {background: #ffa800; color: #fff; font-size: 2rem; width: 100%; padding: 8px; font-family: inherit; line-height: inherit; appearance: none; -webkit-appearance: none; outline: none; border: none;}
+.book-bar button {background: #ffa800; color: #fff; font-size: 2.2rem; width: 100%; padding: 8px; font-family: inherit; line-height: inherit; appearance: none; -webkit-appearance: none; outline: none; border: none;}
 
 .book-bar .item.destination::after {content: '\f57d';}
 .book-bar .item.location::after {content: '\f276';}
@@ -248,9 +248,10 @@ button.button {cursor: pointer; font-family: inherit; font-size: inherit;}
 .photo-grid .row {display: flex; align-items: center;}
 .photo-grid .group {flex: 1;}
 .photo-grid .group.large {flex: 2;}
+.photo-grid .group.large .title {font-size: 4rem;}
 .photo-grid .item {position: relative; border: 5px solid #fff; overflow: hidden; transition: 250ms ease;}
 .photo-grid .item img {width: 100%;}
-.photo-grid .item .title {position: absolute; bottom: 0; left: 0; font-size: 2.6rem; margin: 0; color: #fff; padding: 10px; z-index: 1; transition: 250ms ease;}
+.photo-grid .item .title {position: absolute; bottom: 0; left: 0; font-size: 2.6rem; margin: 0; color: #fff; font-weight: 400; padding: 10px; z-index: 1; transition: 250ms ease;}
 .photo-grid .item .title::before {content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 100%; background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5)); z-index: -1;}
 .photo-grid .item:hover .title {}
 .photo-grid .buttons {margin: 30px 0;}
