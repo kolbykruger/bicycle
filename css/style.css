@@ -252,10 +252,19 @@ button.button {cursor: pointer; font-family: inherit; font-size: inherit;}
 .photo-grid .item {position: relative; border: 5px solid #fff; overflow: hidden; transition: 250ms ease;}
 .photo-grid .item img {width: 100%;}
 .photo-grid .item .title {position: absolute; bottom: 0; left: 0; font-size: 2.6rem; margin: 0; color: #fff; font-weight: 400; padding: 10px; z-index: 1; transition: 250ms ease;}
-.photo-grid .item .title::before {content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 100%; background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5)); z-index: -1;}
+.photo-grid .item .title::before {content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 100%; background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65)); z-index: -1;}
 .photo-grid .item:hover .title {}
 .photo-grid .buttons {margin: 30px 0;}
 .photo-grid .buttons .button {font-size: 2rem;}
+
+    /* Animations */
+    .photo-grid .row .group.large:nth-of-type(odd) .item {transform: translateX(-25%); opacity: 0;}
+    .photo-grid .row .group.large:nth-of-type(even) .item {transform: translateX(25%); opacity: 0;}
+    .photo-grid .row.active .group.large .item {transform: translateX(0); opacity: 1;}
+
+    .photo-grid .row .item {transform: scale(0);}
+    .photo-grid .row.active .item{transform: scale(1);}
+    .photo-grid .row .group .item:last-of-type {transition-delay: 0.2s;}
 
 /*Features*/
 .features {overflow: hidden; max-width: 1200px; margin: 30px auto; display: flex; flex-flow: row wrap;}

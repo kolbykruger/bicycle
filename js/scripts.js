@@ -3,6 +3,19 @@ $('a, button, input[type="submit"]').click(function() {
     return false
 })
 
+//ScrollMagic
+$(document).ready(function() {
+    var controller = new ScrollMagic.Controller;
+    $(".photo-grid .row").each(function() {
+        new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.5,
+            reverse: true
+        }).setClassToggle(this, "active").addTo(controller)
+        .addTo(controller);
+    })
+});
+
 //Scroll to Top
 $('body').append('<a href="" onclick="event.preventDefault()" class="event_track" data-cat="Extra" data-label="Back To Top"><i aria-hidden="true" class="far fa-arrow-alt-circle-up scrollToTop" title="Scroll Up"></i></a>');
 $(window).scroll(function(){
