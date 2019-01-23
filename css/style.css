@@ -232,8 +232,9 @@ button.button {cursor: pointer; font-family: inherit; font-size: inherit;}
 .book-bar select,
 .book-bar button {background: #ffa800; color: #fff; font-size: 2.2rem; width: 100%; padding: 8px; font-family: inherit; line-height: inherit; appearance: none; -webkit-appearance: none; outline: none; border: none;}
 
-.book-bar .item.destination::after {content: '\f57d';}
-.book-bar .item.location::after {content: '\f276';}
+.book-bar .item:first-of-type {background: transparent; font-size: 2.6rem; display: flex; align-items: center; color: #fff; font-weight: 600; flex: 0.75;}
+.book-bar .item.destination::after {display: none;}
+.book-bar .item.location::after {content: '\f57d';}
 .book-bar .item.date::after {content: '\f073';}
 .book-bar .item.search {max-width: 46px; border-radius: 50%;}
 .book-bar .item.search button {cursor: pointer;}
