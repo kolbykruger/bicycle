@@ -67,7 +67,7 @@ button.button {cursor: pointer; font-family: inherit; font-size: inherit;}
 
 /*Header*/
 .headerWrap{width: 100%;}
-.header{width: 100%; max-width: 1200px; margin: 0 auto; padding: 20px 10px; position: relative; display: flex; flex-flow: row wrap; justify-content: space-between; align-items: flex-end;}
+.header{width: 100%; max-width: 1200px; margin: 0 auto; padding: 20px 0; position: relative; display: flex; flex-flow: row wrap; justify-content: space-between; align-items: flex-end;}
 .header .logo{width: 50%; max-width: 120px;}
 .header .logo a{display: block;}
 .header .logo img{width: 100%;}
