@@ -226,10 +226,21 @@ button.button {cursor: pointer; font-family: inherit; font-size: inherit;}
 /*Book Bar*/
 .book-bar {background: #057bab; padding: 20px; max-width: 1200px; margin: 0 auto;}
 .book-bar .inner {max-width: 1000px; margin: 0 auto; display: flex; align-items: center; justify-content: center;}
-.book-bar .inner > div {flex: 1; margin: 0 20px;}
+.book-bar .inner .item {position: relative; flex: 1; margin: 0 10px; background: #fff; color: #222; height: 46px; border-radius: 0.25em; overflow: hidden;}
+.book-bar .inner .item::after {font-family: "Font Awesome 5 Pro"; position: absolute; right: 10px; top: 0; bottom: 0; display: flex; align-items: center; justify-content: center; pointer-events: none; opacity: 0.65;}
 .book-bar input,
 .book-bar select,
-.book-bar button {width: 100%; padding: 8px; font-size: inherit; font-family: inherit; line-height: inherit; appearance: none; -webkit-appearance: none;}
+.book-bar button {background: #ffa800; color: #fff; font-size: 2rem; width: 100%; padding: 8px; font-family: inherit; line-height: inherit; appearance: none; -webkit-appearance: none; outline: none; border: none;}
+
+.book-bar .item.destination::after {content: '\f57d';}
+.book-bar .item.location::after {content: '\f276';}
+.book-bar .item.date::after {content: '\f073';}
+.book-bar .item.search {max-width: 46px; border-radius: 50%;}
+.book-bar .item.search button {cursor: pointer;}
+.book-bar .item.search:hover {transform: translateY(-2px); box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);}
+
+.book-bar input {font-family: inherit; width: 100%; height: 100%; padding: 10px; border: none; background: transparent; color: #4e4e4e; font-weight: 400; cursor: pointer; font-size: 1.6rem; transition: 150ms ease;}
+.book-bar select {font-family: inherit; width: 100%; height: 100%; padding: 10px; border: none; border-radius: 0; border-radius: 0; color: #4e4e4e; background: transparent; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer; font-size: 1.6rem; transition: 150ms ease;}
 
 /*Photo Grid */
 .photo-grid {max-width: 1200px; margin: 60px auto;}
@@ -551,11 +562,11 @@ button.button {cursor: pointer; font-family: inherit; font-size: inherit;}
     }
 
 /*Footer*/
-.footer_wrap{width: 100%; background: #f8f8f8; padding: 10px; margin: 20px 0 0 0;}
-.footer{width: 100%; max-width: 1200px; margin: 0 auto; overflow: hidden; font-size: 1.2rem; text-align: center; color: rgba(0,0,0,.84);}
-.footer a{color: rgba(0,0,0,.84);}
+.footer_wrap{width: 100%; background: #057bab; padding: 10px; margin: 20px 0 0 0;}
+.footer{width: 100%; max-width: 1200px; margin: 0 auto; overflow: hidden; font-size: 1.2rem; text-align: center; color: #fff;}
+.footer a{color: #fff; text-decoration: none;}
 .footer .social{margin: 20px auto; font-size: 2rem; display: flex; justify-content: center;}
-.footer .social a{margin: 0 5px; position: relative; background: rgba(0,0,0,1); display: flex; align-items: center; justify-content: center; padding: 5px; color: #fff; text-decoration: none; width: 2em;}
+.footer .social a{margin: 0 5px; position: relative; background: #fff; display: flex; align-items: center; justify-content: center; padding: 5px; color: #057bab; border-radius: 50%; text-decoration: none; width: 2em;}
 .footer .social a:after {content: ""; display: block; padding-bottom: 100%;}
 .footer .social a:hover{background: rgba(0,0,0,.6);}
 .footer .address{margin: 0 auto 5px;}
