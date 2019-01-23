@@ -10,7 +10,7 @@ $(document).ready(function() {
         new ScrollMagic.Scene({
             triggerElement: this,
             triggerHook: 0.5,
-            reverse: true
+            reverse: false
         }).setClassToggle(this, "active").addTo(controller)
         .addTo(controller);
     })
